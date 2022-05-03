@@ -1,0 +1,160 @@
+body{
+  background-color: black
+}
+
+@keyframes shadows {
+  0% {left: 0; top: 0}
+  50% {left: 10px; top: 5px}
+
+  100% {left: 0; top: 0}
+
+}
+
+@keyframes head {
+  0% {left: 0; top: 0}
+  50% {left: 5px; top: 10px}
+  100% {left: 0; top: 0}
+}
+
+@keyframes body {
+  0% {left: 0; top: 0}
+  50% {left: 0; top: 10px}
+  100% {left: 0; top: 0}
+}
+
+
+@keyframes leg1 {
+  0% {left: -10px; top: 0}
+  25% {left: 10px; top: -8px}
+  50% {left: 10px; top: 8px}
+  75% {left: -10px; top: 8px}
+  100% {left: -10px; top: 0}
+}
+
+@keyframes leg2 {
+  0% {left: 10px; top: 10px}
+  25% {left: -10px; top: 8px}
+  50% {left: -10px; top: -3px}
+  75% {left: 10px; top: -8px}
+  100% {left: 10px; top: 10px}
+}
+
+.possi{
+  width: 15%;
+  margin: auto;
+  top: 120px;
+  position: relative;
+}
+
+.head{
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  background-color: white;
+  margin-bottom: 10px;
+  position: relative;
+  animation-name: head;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+
+
+.body{
+  width: 100px;
+  height: 200px;
+  border-radius: 28px;
+  /* border-top-right-radius: 20px; */
+  background-color: white;
+  margin-bottom: 15px;
+
+  position: relative;
+  animation-name: body;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+
+
+.leg2, .leg1{
+  width: 40px;
+  height: 100px;
+  border-radius: 20px;
+  background-color: white;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  position:relative;
+  animation-name: leg2;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+
+}
+
+.leg1{
+  float: left;
+  animation-name: leg1;
+}
+
+.feet2, .feet1{
+  width: 60px;
+  height: 28px;
+  background-color: white;
+  border-radius: 15px;
+  margin-left: 26px;
+  position: relative;
+
+  animation-name: leg2;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+
+.feet1{
+float: left;
+  animation-name: leg1;
+
+}
+
+.shadows{
+
+  width: 250px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: gray;
+  position: relative;
+  /* right: 350px;
+  bottom: 20px; */
+  margin-right: 50px;
+  z-index: -1;
+  animation-name:shadows;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+
+}
+
+
+
+
+/* parts of the body */
+
+.headphone{
+  width: 10px;
+  height: 50px;
+  background-color: black;
+  margin-top: 10px;
+  margin-left: 50px;
+  border-color: black;
+
+}
+
+
+.headphone2{
+  width: 30px;
+  height: 30px;
+  border-radius: 48%;
+  background-color: black;
+  margin-left: 40px;
+  margin-bottom: 40px;
+  border-color: black;
+
+}
